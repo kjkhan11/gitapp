@@ -40,3 +40,8 @@ steps:
     scannerMode: 'MSBuild'
     projectKey: 'Agileproject-jk'
     projectName: 'Agileproject-jk'
+
+- task: SonarCloudAnalyze@1
+- task: SonarCloudPublish@1
+  inputs:
+    pollingTimeoutSec: '300'
